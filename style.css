@@ -1,0 +1,407 @@
+/* Mini-reset pour supprimer les paramètres de base */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style : none;
+    scroll-behavior: smooth;
+}
+/* Chargement de la font-family et l'image de fond */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(images/backgreen.jpg);
+    background-size: 100%;
+}
+
+
+/* header(En-tête) _____________________________________________________________________*/
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/sallecours.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.bg{
+    height: 70vh;
+    width: 30vw;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+
+/* navbar___________________________________________________________________ */
+
+.logo1{
+    border-radius: 40px 0 40px 0;
+}
+
+.navbar{
+    position:relative;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color:rgba(102, 214, 177, 0.5);   
+}
+
+.navbar a{
+    color:white;
+}
+
+.navbar .logo1{
+    position: relative;
+    width: 150px;
+    height: 75px;
+}
+
+.navbar .navlinks ul{ 
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;  
+}
+
+.navbar .navlinks ul li{ 
+    margin: 0 60px;
+}
+
+nav a:hover{
+    background-color: rgba(102, 214, 177, 0.8);
+    transition: 0.1s;
+    text-transform: uppercase;
+}
+
+/* Chargement de la vidéo youtube */
+iframe{
+    margin-left: 600px;
+    margin-bottom: 100px;
+    border-radius: 5%;
+}
+
+
+/* PRESENTATION _________________________________________________________ */
+
+#presentation {
+    background-image: url(images/fond-formation-2.png);
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    border-radius: 40%;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+
+}
+
+#presentation .container{
+    padding: 50px 15px;
+    max-width: 1500px ;
+    margin: 73px auto;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#presentation .container .left{
+    width: 70%;
+    margin-left: 150px;
+    margin-top: -40px;
+}
+
+#presentation .container .left h3{
+    font-size: 3em;
+    color: rgb(102, 214, 177);
+    margin-bottom: 25px;
+    margin-top: 25px; 
+}
+
+#presentation .container .left p{
+    font-size: 1.6rem;
+}
+
+#presentation .container .right{
+    max-width: 656px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 170px;
+}
+
+#presentation .container .right .icon{
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 11px 11px 22px #c7c7c7, inset -11px -11px 22px #77f7db;
+}
+
+#presentation .container .right .icon span{
+    font-size: 2em;
+}
+
+#presentation .container .right .icon h4{
+    font-size: 0.5em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* EQUIPE PEDAGOGIQUE _________________________________________________________ */
+.team{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 100px;
+}
+
+.team h2 {
+    color: white;
+ }
+
+ .team h3 {
+    color: white;
+ }
+
+ .team p {
+    color: white;
+ }
+
+.equipeh2 h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
+
+.card{
+    float: left;
+    flex-direction: row;
+    width: 390px;
+    justify-content: space-around;
+}
+
+.container .card img{
+    height: 280px;
+    padding: 60px; 
+}
+
+.img-box{
+    margin-bottom: -50px;
+}
+
+.text-box h3{
+    display: flex;
+    justify-content: space-around;
+    text-align:left ;
+    text-align-last: right;
+    font-size: 35px;
+    margin: 15px;    
+}
+
+.text-box p{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+ /* Nos formations___________________________________________________________________ */
+
+ .formations {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    gap: 49px;
+    margin-bottom: 102px; 
+}
+
+.formations img{
+    border-radius: 10%;
+}
+
+#campus{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 100px;
+}
+
+#formation h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
+
+.formcard-1 {
+    margin-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.formcard-2 {
+    margin-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.formcard-3 {
+    margin-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.formcard-4 {
+    margin-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.formcard-5 {
+    margin-right: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10%;
+    background-color: white;
+}
+
+  .formcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .containtext {
+    padding: 2px 16px;
+  }
+
+  details summary{
+    color: #66D6B1;
+  }
+
+  #cont-1{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+/* Footer___________________________________________________________________ */
+
+  footer{
+    background-image: url(images/fond-formation.png);
+    width: 100%;
+  }
+
+  footer img{
+    width: 50px;
+ }
+
+ .contenu-footer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+ }
+
+ .bloc{
+    width: 25%;
+    margin: 0 30px;
+ }
+
+ .footer-service{
+    margin-right: 100px;
+ }
+
+ .footer-contact{
+    margin-left: 50px;
+    margin-right: -100px;
+ }
+
+ .footer-codeurs{
+    margin-top: -50px;
+ }
+ .footer-codeurs p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+ }
+ 
+ .footer-service h3,
+ .footer-contact h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+ }
+
+ .footer-codeurs h3{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+ }
+
+ .footer-contact p{
+    padding: 5px 0;
+    
+ }
+
+ .footer-service ul{
+    padding: 5px 0;
+ }
+
+ .liste-codeurs{
+    display: flex;
+    margin-left: 850px;
+ }
+
+ .liste-services li{
+    padding: 2px 0;
+ }
+
+ .liste-services a{
+    text-decoration: none;
+    color: #333;
+ }
+
+ .liste-services a:hover{
+    color: rgb(3, 3, 3);
+ }
+
+.btn-default{
+    font-size: 1.4rem;
+    margin-left: 1700px;
+}
+
+ 
